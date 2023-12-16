@@ -13,7 +13,7 @@ struct StarterView: View {
     
     var body: some View {
         Group {
-            if user.isRegistered {
+            if UserDefaults.standard.string(forKey: "name") != "" {
                 MainView()
             } else {
                 RegisterView()

@@ -25,7 +25,30 @@ struct MainView: View {
             Spacer()
             
             ButtonView(timer: timer)
+            Spacer()
+            
+            Button(action: logOut) {
+                Text("LogOut")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+                    .shadow(color: .black, radius: 5)
+            }
+            .frame(width: 200, height: 60)
+            .background(Color.orange)
+            .clipShape(.rect(cornerRadius: 20))
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.black, lineWidth: 4)
+            )
         }
+    }
+}
+
+extension MainView {
+    private func logOut() {
+        user.name = ""
+        user.isRegistered.toggle()
     }
 }
 

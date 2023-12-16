@@ -39,7 +39,6 @@ struct RegisterView: View {
 }
 
 extension RegisterView {
-    
     private func registerUser() {
         user.name = name
         user.isRegistered.toggle()
