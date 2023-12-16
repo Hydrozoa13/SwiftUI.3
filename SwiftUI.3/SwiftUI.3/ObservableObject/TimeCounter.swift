@@ -52,6 +52,7 @@ final class TimeCounter: ObservableObject {
         if counter > 0 {
             counter -= 1
         } else {
+            timer?.invalidate()
             timer = nil
             buttonTitle = .reset
         }

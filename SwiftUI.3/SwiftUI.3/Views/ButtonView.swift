@@ -9,11 +9,26 @@ import SwiftUI
 
 struct ButtonView: View {
     
+    @ObservedObject var timer: TimeCounter
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: timer.startTimer) {
+            Text("\(timer.buttonTitle.rawValue)")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundStyle(.white)
+                .shadow(color: .black, radius: 5)
+        }
+        .frame(width: 200, height: 60)
+        .background(Color.red)
+        .clipShape(.rect(cornerRadius: 20))
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.black, lineWidth: 4)
+        )
     }
 }
 
 #Preview {
-    ButtonView()
+    ButtonView(timer: TimeCounter())
 }
