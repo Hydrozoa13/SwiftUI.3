@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @EnvironmentObject private var user: UserManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello, \(user.name)!")
+                .font(.title)
+        }
     }
 }
 
 #Preview {
     MainView()
+        .environmentObject(UserManager())
 }

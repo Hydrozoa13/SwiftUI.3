@@ -11,5 +11,5 @@ final class UserManager: ObservableObject {
     
     @Published var isRegistered = false
     
-    var name = ""
+    var name = "Test Name"
 }
