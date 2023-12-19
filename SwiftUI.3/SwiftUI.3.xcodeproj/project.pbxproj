@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		D170BC5E2B2DA5C500748AAC /* SwiftUI_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC5D2B2DA5C500748AAC /* SwiftUI_3App.swift */; };
-		D170BC602B2DA5C500748AAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC5F2B2DA5C500748AAC /* ContentView.swift */; };
 		D170BC622B2DA5C600748AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D170BC612B2DA5C600748AAC /* Assets.xcassets */; };
 		D170BC652B2DA5C600748AAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D170BC642B2DA5C600748AAC /* Preview Assets.xcassets */; };
+		D170BC6F2B2DA67B00748AAC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC6E2B2DA67B00748AAC /* UserManager.swift */; };
+		D170BC732B2DA93600748AAC /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC722B2DA93600748AAC /* StarterView.swift */; };
+		D170BC752B2DA9CA00748AAC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC742B2DA9CA00748AAC /* RegisterView.swift */; };
+		D170BC772B2DA9E700748AAC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC762B2DA9E700748AAC /* MainView.swift */; };
+		D170BC792B2DB19600748AAC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC782B2DB19600748AAC /* ButtonView.swift */; };
+		D170BC7B2B2DB1CC00748AAC /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170BC7A2B2DB1CC00748AAC /* TimeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D170BC5A2B2DA5C500748AAC /* SwiftUI.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D170BC5D2B2DA5C500748AAC /* SwiftUI_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_3App.swift; sourceTree = "<group>"; };
-		D170BC5F2B2DA5C500748AAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D170BC612B2DA5C600748AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D170BC642B2DA5C600748AAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D170BC6E2B2DA67B00748AAC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		D170BC722B2DA93600748AAC /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		D170BC742B2DA9CA00748AAC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D170BC762B2DA9E700748AAC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D170BC782B2DB19600748AAC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D170BC7A2B2DB1CC00748AAC /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,11 @@
 		D170BC5C2B2DA5C500748AAC /* SwiftUI.3 */ = {
 			isa = PBXGroup;
 			children = (
-				D170BC5D2B2DA5C500748AAC /* SwiftUI_3App.swift */,
-				D170BC5F2B2DA5C500748AAC /* ContentView.swift */,
-				D170BC612B2DA5C600748AAC /* Assets.xcassets */,
+				D170BC6B2B2DA62D00748AAC /* App */,
+				D170BC6C2B2DA63600748AAC /* Views */,
+				D170BC6D2B2DA64400748AAC /* ObservableObject */,
 				D170BC632B2DA5C600748AAC /* Preview Content */,
+				D170BC612B2DA5C600748AAC /* Assets.xcassets */,
 			);
 			path = SwiftUI.3;
 			sourceTree = "<group>";
@@ -65,6 +76,34 @@
 				D170BC642B2DA5C600748AAC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D170BC6B2B2DA62D00748AAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D170BC5D2B2DA5C500748AAC /* SwiftUI_3App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D170BC6C2B2DA63600748AAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D170BC722B2DA93600748AAC /* StarterView.swift */,
+				D170BC742B2DA9CA00748AAC /* RegisterView.swift */,
+				D170BC762B2DA9E700748AAC /* MainView.swift */,
+				D170BC782B2DB19600748AAC /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D170BC6D2B2DA64400748AAC /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				D170BC6E2B2DA67B00748AAC /* UserManager.swift */,
+				D170BC7A2B2DB1CC00748AAC /* TimeCounter.swift */,
+			);
+			path = ObservableObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D170BC602B2DA5C500748AAC /* ContentView.swift in Sources */,
+				D170BC6F2B2DA67B00748AAC /* UserManager.swift in Sources */,
+				D170BC752B2DA9CA00748AAC /* RegisterView.swift in Sources */,
+				D170BC792B2DB19600748AAC /* ButtonView.swift in Sources */,
 				D170BC5E2B2DA5C500748AAC /* SwiftUI_3App.swift in Sources */,
+				D170BC772B2DA9E700748AAC /* MainView.swift in Sources */,
+				D170BC7B2B2DB1CC00748AAC /* TimeCounter.swift in Sources */,
+				D170BC732B2DA93600748AAC /* StarterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
